@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class FolderController {
 
-    private FolderService folderService;
+    private final FolderService folderService;
 
     @PostMapping("/folders")
     public void addFolders(@RequestBody FolderRequestDto folderRequestDto,
